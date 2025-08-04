@@ -104,26 +104,6 @@ public class SSChatController
 		}
 	}
 
-    public override void OnPlayerTogglingNoclip(PlayerTogglingNoclipEventArgs ev)
-    {
-
-        if (FpcNoclip.IsPermitted(ev.Player.ReferenceHub))
-            return;
-
-        if (!ScpProximityChatPlugin.Instance.Config.AllowedRoles.Contains(ev.Player.Role))
-            return;
-
-        if (!ToggledPlayers.Add(ev.Player.ReferenceHub))
-        {
-            ToggledPlayers.Remove(ev.Player.ReferenceHub);
-            ev.Player.SendHint(ScpProximityChatModule.Config.ProximityChatDisabledMessage, [new StringHintParameter(string.Empty)], null, 4);
-            return;
-        }
-
-        ev.Player.SendHint(ScpProximityChatModule.Config.ProximityChatEnabledMessage, [new StringHintParameter(string.Empty)], null, 4);
-        return;
-    }
-
     public static void OnEnableProximityChat(ChatMember member, bool state)
 	{
 		member.SetProximityChat(state);
