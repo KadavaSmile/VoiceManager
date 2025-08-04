@@ -1,13 +1,10 @@
 using System.Collections.Generic;
-using HintServiceMeow.Core.Enum;
-using HintServiceMeow.Core.Models.Hints;
-using HintServiceMeow.Core.Utilities;
 
 namespace VoiceManager.Features;
 
 public static class HintProvider
 {
-	public static Dictionary<ReferenceHub, List<AbstractHint>> Hints { get; } = new();
+	/*public static Dictionary<ReferenceHub, List<AbstractHint>> Hints { get; } = new();
 
 	public static bool TryGet(ReferenceHub referenceHub, out List<AbstractHint> hints)
 	{
@@ -76,5 +73,5 @@ public static class HintProvider
 		}
 
 		Hints.Remove(hub);
-	}
+	}*/
 }

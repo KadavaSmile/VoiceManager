@@ -46,7 +46,7 @@ public class ChatMember
 
 		var member = new ChatMember(hub);
 		Members.Add(hub, member);
-		if (VoiceEntry.Instance.Config.AutoDefaultHints) HintProvider.CreateDefaultHints(hub);
+		//if (VoiceEntry.Instance.Config.AutoDefaultHints) HintProvider.CreateDefaultHints(hub);
 		Events.OnCreatedChatMember(member);
 		return member;
 	}
@@ -63,7 +63,7 @@ public class ChatMember
 		member.SetHasProximityChat(false);
 		member.RemoveAllGroups();
 		member.SpeakerToy.Destroy();
-		if (VoiceEntry.Instance.Config.AutoDefaultHints) HintProvider.RemoveHints(hub);
+		//if (VoiceEntry.Instance.Config.AutoDefaultHints) HintProvider.RemoveHints(hub);
 		Members.Remove(hub);
 		Events.OnRemovedChatMember(hub);
 	}

@@ -1,8 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceManager-LabAPI", "VoiceManager-LabAPI\VoiceManager-LabAPI.csproj", "{0D1E79AE-A564-4426-909D-5D639833BD5D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceManager-Exiled", "VoiceManager-Exiled\VoiceManager-Exiled.csproj", "{C948F4F3-9684-460A-B5AE-6A0DFF869111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +15,8 @@ Global
 		{0D1E79AE-A564-4426-909D-5D639833BD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1E79AE-A564-4426-909D-5D639833BD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1E79AE-A564-4426-909D-5D639833BD5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C948F4F3-9684-460A-B5AE-6A0DFF869111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C948F4F3-9684-460A-B5AE-6A0DFF869111}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C948F4F3-9684-460A-B5AE-6A0DFF869111}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C948F4F3-9684-460A-B5AE-6A0DFF869111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
